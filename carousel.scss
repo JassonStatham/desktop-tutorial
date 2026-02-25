@@ -42,3 +42,11 @@
 				left: 1.25rem;
 			}
 		}
+		
+	&-fade {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: var( --carousel-face-width );
+		z-index: 1;
+		opacity: 1;
