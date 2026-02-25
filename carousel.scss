@@ -28,3 +28,24 @@
 			scroll-margin-left: 0;
 		}
 	}
+
+		&-fade {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: var( --carousel-face-width );
+		z-index: 1;
+		opacity: 1;
+
+		&--left {
+			left: 0;
+
+			.theme--light & {
+				background: linear-gradient( to right, #ffffff, transparent );
+			}
+
+			.theme--dark & {
+				background: linear-gradient( to right, #121212, transparent );
+			}
+		}
+
