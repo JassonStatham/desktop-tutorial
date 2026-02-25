@@ -28,3 +28,17 @@
 			scroll-margin-left: 0;
 		}
 	}
+	
+	&-button {
+		position: absolute;
+		top: 50%;
+		transform: translateY( -50% );
+		z-index: 2;
+
+		&--left {
+			left: 0;
+
+			@media ( min-width: 1024px ) {
+				left: 1.25rem;
+			}
+		}
