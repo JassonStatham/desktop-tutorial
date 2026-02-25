@@ -1,0 +1,30 @@
+.carousel {
+	position: relative;
+
+	--carousel-face-width: 3rem;
+
+	@media ( min-width: 1024px ) {
+		--carousel-face-width: 5rem;
+	}
+
+	&-content {
+		display: flex;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		-webkit-overflow-scrolling: touch;
+		scrollbar-width: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+
+	&-item {
+		flex: 0 0 auto;
+		scroll-snap-align: start;
+		scroll-margin-left: var( --carousel-face-width );
+
+		&:first-child {
+			scroll-margin-left: 0;
+		}
+	}
