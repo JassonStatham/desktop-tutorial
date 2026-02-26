@@ -8,7 +8,6 @@
 	}
 
 	&-content {
-		display: flex;
 		overflow-x: auto;
 		scroll-snap-type: x mandatory;
 		-webkit-overflow-scrolling: touch;
@@ -41,3 +40,11 @@
 				left: 1.25rem;
 			}
 		}
+		
+	&-fade {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: var( --carousel-face-width );
+		z-index: 1;
+		opacity: 1;
